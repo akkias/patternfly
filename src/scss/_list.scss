@@ -1,0 +1,14 @@
+.list-group {
+  background: $pf-color-white;
+  border: 0;
+  border-radius: $pf-global--BorderRadius--sm;;
+  box-shadow: none;
+  padding: $pf-global--spacer--xs 0;
+  .list-group-item {
+    border: 0;
+    padding: $pf-global--spacer--sm $pf-global--spacer--md;
+    + .list-group-item {
+      border-top: $pf-global--BorderWidth--sm solid $pf-color-black-200;
+    }
+  }
+}

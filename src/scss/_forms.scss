@@ -1,0 +1,64 @@
+.form-control {
+  border-color: $pf-color-black-400;
+  border-radius: $pf-global--BorderRadius--sm;
+  box-shadow: none;
+  font-weight: $pf-global--FontWeight--semi-bold;
+  height: 32px;
+  padding: 0 $pf-global--spacer--sm;
+  @include input-placeholder {
+    color: $pf-color-black-900;
+    font-style: normal;
+  }
+  &[disabled],
+  &.disabled {
+    background: $pf-color-black-300;
+  }
+  &:hover {
+    border-color: $pf-color-blue-400;
+  }
+  &:focus {
+    box-shadow: 0 0 0 1px $pf-color-blue-400;
+  }
+  @at-root textarea#{&} {
+    padding: $pf-global--spacer--xs $pf-global--spacer--sm;
+  }
+}
+
+.has-error {
+  .form-control {
+    box-shadow: none;
+    &:focus {
+      box-shadow: 0 0 0 1px $pf-color-red-300;
+    }
+  }
+}
+
+.form-horizontal {
+  .control-label {
+    @media (min-width: 768px) {
+      padding-top: 5px;
+    }
+  }
+}
+
+.input-group {
+  .input-group-addon {
+    background: $pf-color-black-300;
+    border-color: $pf-color-black-400;
+    color: $pf-color-black-1000;
+    padding: 0 $pf-global--spacer--sm;
+    &:first-child {
+      border-radius: $pf-global--BorderRadius--sm 0 0 $pf-global--BorderRadius--sm;
+    }
+    &:last-child {
+      border-radius: 0 $pf-global--BorderRadius--sm $pf-global--BorderRadius--sm 0;
+    }
+  }
+}
+
+.form-group {
+  margin-bottom: $pf-global--spacer--md;
+  &-sm {
+    margin-bottom: $pf-global--spacer--xs;
+  }
+}

@@ -1,0 +1,38 @@
+.card-pf {
+    border-radius: $pf-global--BorderRadius--sm;
+    box-shadow: $pf-global--BoxShadow--sm;
+    margin-right: -$pf-global--spacer--sm;
+    margin-left: -$pf-global--spacer--sm;
+    margin-bottom: $pf-global--spacer--md;
+    padding: 0 !important;
+    .card-pf-heading {
+        border-color: $pf-color-black-200;
+        margin: 0;
+        padding: 0;
+    }
+    .card-pf-title {
+        font-size: $pf-global--FontSize--sm;
+        font-weight: $pf-global--FontWeight--semi-bold;
+        margin: 0;
+        padding: $pf-global--spacer--sm + .25 $pf-global--spacer--md;
+    }
+    .card-pf-body {
+        margin: 0;
+        padding: $pf-global--spacer--md;
+    }
+    .card-pf-footer {
+        background: $pf-color-white;
+        border-color: $pf-color-black-200;
+        border-radius: 0 0 $pf-global--BorderRadius--sm $pf-global--BorderRadius--sm;
+        margin: 0 !important;
+        padding: $pf-global--spacer--sm + .25 $pf-global--spacer--md;
+    }
+    &--secondary {
+        background: $pf-color-black-200;
+        box-shadow: none;
+    }
+    &--tertiary {
+        border: 1px solid $pf-color-black-200;
+        box-shadow: none;
+    }
+}

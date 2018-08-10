@@ -1,0 +1,42 @@
+.dropdown {
+  .caret {
+    font-size: $pf-global--FontSize--md;
+  }
+  &.open {
+    .btn {
+      box-shadow: 0 0 0 2px $pf-color-blue-400 inset;
+    }
+    .caret {
+      transform: rotate(180deg);
+      top: 2px;
+    }
+  }    
+  .dropdown-menu {
+    margin-top: $pf-global--spacer--xs;
+  }
+}
+.dropdown-menu {
+  background: $pf-color-black-100;
+  border: 0;
+  box-shadow: $pf-global--BoxShadow;
+  margin-top: $pf-global--spacer--xs;
+  padding: $pf-global--spacer--sm 0;
+  > li {
+      > a {
+        border: 0;
+        color: $pf-color-black-1000;
+        font-size: $pf-global--FontSize--sm;
+        padding: $pf-global--spacer--sm $pf-global--spacer--md;
+        &:hover {
+          background: $pf-color-black-200;
+          border-radius: $pf-global--BorderRadius--sm;
+          color: $pf-color-black-1000 !important;
+        }
+        &:active,
+        &:focus {
+          background: $pf-color-black-200;
+          color: $pf-color-white;
+        }
+      }
+  }
+}

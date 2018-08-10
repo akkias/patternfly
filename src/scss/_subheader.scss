@@ -1,0 +1,12 @@
+.subheader {
+    background: $pf-color-white;
+    padding: $pf-global--spacer--sm $pf-global--spacer--md;
+    @include flexbox;
+    @include align-items(center);
+    &-actions {
+        margin-left: auto;
+    }
+    h1 {
+        font-size: $pf-global--FontSize--lg !important; 
+    }
+}

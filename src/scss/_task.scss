@@ -1,0 +1,32 @@
+.task {
+    position: relative;
+    &-decline {
+        background: transparent;
+        border: 0;
+        color: $pf-color-black-500;
+        position: absolute;
+        right: 0;
+        top: 1px;
+        &:hover {
+            color: $pf-color-red-100;
+        }
+    }
+    &.active,
+    &:hover {
+        .task-content { 
+            background: $pf-global--BackgroundColor--active !important;
+            box-shadow: none;
+            text-decoration: none;
+        }
+    }
+    .task-content {
+        box-shadow: 0 0 0 1px $pf-color-black-200 inset;
+        color: $pf-color-black-900 !important;
+        padding: $pf-global--spacer--sm !important;
+        @include flexbox;
+        @include flex-direction(column);
+    }
+    + .task {
+        margin-top: $pf-global--spacer--xs;
+    }
+}

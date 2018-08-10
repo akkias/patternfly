@@ -1,0 +1,35 @@
+.table {
+  border: $pf-global--BorderWidth--sm solid $pf-color-black-200;
+  border-radius: $pf-global--BorderRadius--sm;
+  font-size: $pf-global--FontSize--xs;
+  > thead {
+    background: $pf-color-white;
+  }
+  > thead > tr > th, 
+  > tbody > tr > th,
+  > tfoot > tr > th, {
+    border: 0;
+    color: $pf-color-black-800;
+    font-size: 90%;
+    font-weight: $pf-global--FontWeight--semi-bold;
+  }
+  > thead > tr > th, 
+  > tbody > tr > th,
+  > tfoot > tr > th,
+  > thead > tr > td,
+  > tbody > tr > td,
+  > tfoot > tr > td {
+    border-color: $pf-color-black-200;
+    border-bottom: 0;
+    padding: $pf-global--spacer--sm $pf-global--spacer--md;
+  }
+  > tbody > tr {
+    &:hover {
+      background: $pf-color-blue-50;
+      + tr td,
+      td {
+        border-color: $pf-color-blue-50;
+      }
+    }
+  }
+}

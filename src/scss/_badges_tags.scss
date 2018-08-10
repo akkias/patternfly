@@ -1,0 +1,47 @@
+.badge {
+  background: $pf-color-black-200;
+  border-radius: $pf-global--BorderRadius--sm;
+  color: $pf-color-black-1000;
+  font-size: 11px;
+  margin-left: $pf-global--spacer--xs;
+  padding: $pf-global--spacer--xs $pf-global--spacer--sm * 1.25;
+}
+.tag {
+  @extend.badge;
+  border-radius: $pf-global--BorderRadius--lg;
+  display: inline-block;
+  font-weight: $pf-global--FontWeight--bold;
+  line-height: $pf-global--LineHeight--sm;
+  margin-left: $pf-global--spacer--xs;
+      &-has-close-icon {
+    padding: $pf-global--spacer--xs $pf-global--spacer--xs $pf-global--spacer--xs $pf-global--spacer--sm;
+  }
+  &-primary {
+    background: $pf-color-blue-400;
+    color: $pf-color-white;
+    &-light {
+      background: $pf-color-blue-50;
+      color: $pf-color-blue-400;
+    }
+  }
+  &-success {
+    background: $pf-color-green-400;
+    color: $pf-color-white;
+    &-light {
+      background: $pf-color-green-100;
+      color: $pf-color-green-400;
+    }
+  }
+  &-danger {
+    background: $pf-color-red-100;
+    color: $pf-color-white;
+  }
+  &-warning {
+    background: $pf-color-orange-400;
+    color: $pf-color-white;
+    &-light {
+      background: $pf-color-orange-100;
+      color: $pf-color-orange-400;
+    }
+  }
+}

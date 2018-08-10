@@ -1,0 +1,47 @@
+.nav-pf-vertical {
+    background: $pf-color-black-900;
+    border-right: none;
+    padding: $pf-global--spacer--sm 0;
+    top: 50px;
+    width: 300px;
+    .list-group {
+        background: transparent;
+        padding: 0;
+    }
+    .list-group-item {
+        padding: 0;
+        border-top: none !important;
+        a {
+            font-size: $pf-global--FontSize--xs;
+            height: auto;
+            padding: $pf-global--spacer--sm $pf-global--spacer--md;
+            width: auto;
+        }
+    }
+    &-light {
+        background: $pf-color-white;
+        box-shadow: $pf-global--BoxShadow--sm-right;
+        .list-group-item {
+            margin-bottom: $pf-global--spacer--xs;
+            a {
+                color: $pf-color-black-800;
+            }
+            &.active,
+            &:hover {
+                color:  $pf-color-black-1000;
+                a {
+                    background: $pf-color-white;
+                    color: $pf-color-blue-400;
+                    &:before {
+                        background: $pf-color-blue-400;
+                        bottom: 0;
+                        height: 2px;
+                        left: $pf-global--spacer--md;
+                        top: auto;
+                        width: $pf-global--spacer--2xl;
+                    }
+                }
+            }
+        }
+    }
+}

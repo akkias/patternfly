@@ -1,0 +1,81 @@
+.react-select__control {
+  background: $pf-color-white !important;
+  border-color: $pf-color-black-300 !important;
+  border-radius: $pf-global--BorderRadius--sm !important;
+  min-height: 32px !important;
+  &:hover {
+    border-color: $pf-color-blue-400 !important;
+  }
+  &--is-focused {
+    border-color: $pf-color-blue-400 !important;
+    box-shadow: 0 0 0 1px $pf-color-blue-400 !important;
+  }
+  .react-select__value-container {
+    padding: 0 $pf-global--spacer--xs $pf-global--spacer--xs;
+    &-input {
+      > div {
+        padding: 0;
+      }
+    }
+  }
+}
+.react-select__indicator-separator {
+  background-color: $pf-color-black-400 !important;
+}
+.react-select__dropdown-indicator,
+.react-select__clear-indicator {
+  color: $pf-color-black-500 !important;
+  padding: 0 $pf-global--spacer--sm !important;
+}
+.react-select__single-value {
+  font-weight: $pf-global--FontWeight--semi-bold;
+}
+.react-select__menu {
+  background: $pf-color-black-100 !important;
+  border-radius: $pf-global--BorderRadius--sm;
+  box-shadow: $pf-global--BoxShadow !important;
+  margin-top: 1px !important;
+  padding: $pf-global--spacer--sm;
+  .react-select__menu-list {
+      padding: 0 !important;
+  }
+  .react-select__option {
+      border-radius: $pf-global--BorderRadius--sm;
+      font-weight: $pf-global--FontWeight--semi-bold;
+      line-height: $pf-global--LineHeight--sm;
+      padding: $pf-global--spacer--sm;
+      &--is-focused,
+      &--is-selected,
+      &:active {
+        background: $pf-color-black-200;
+        color: $pf-color-black-1000;
+      }
+  }
+}
+.react-select__multi-value {
+  background: $pf-color-blue-50 !important;
+  border-radius: $pf-global--BorderRadius--sm !important;
+  color: $pf-color-blue-400 !important;
+  font-weight: $pf-global--FontWeight--bold;
+  line-height: $pf-global--LineHeight--sm;
+  margin: $pf-global--spacer--xs $pf-global--spacer--xs 0 0 !important;
+  &:hover {
+    background: $pf-color-red-100 !important;
+  }
+  &__label {
+    color: $pf-color-blue-400 !important;
+    font-size: 11px !important;
+    padding: $pf-global--spacer--xs 0 $pf-global--spacer--xs $pf-global--spacer--sm !important;
+  }
+  .react-select__multi-value__remove {
+    border-radius: 0 $pf-global--BorderRadius--sm $pf-global--BorderRadius--sm 0 !important;
+    color: $pf-color-blue-400 !important;
+    font-weight: normal;
+    margin-left: $pf-global--spacer--xs;
+    padding: $pf-global--spacer--xs;
+    &:hover {
+      background: $pf-color-red-100 !important;
+      color: $pf-color-red-300 !important;
+    }
+  }
+}
