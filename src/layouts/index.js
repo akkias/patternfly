@@ -9,7 +9,7 @@ import Sidebar from '../components/sidebar'
 import '../../node_modules/patternfly/dist/css/patternfly.css'
 import '../../node_modules/patternfly/dist/css/patternfly-additions.css'
 import '../scss/style.scss'
-import favicon from '../../public/assets/images/fav.png'
+import favicon from '../../static/assets/images/fav.png'
 
 library.add(faTasks,faBell,faTimesCircle,faChevronDown, faSync, faPencilAlt,faTimes, faExclamationTriangle)
 const Layout = ({ children, data }) => (
