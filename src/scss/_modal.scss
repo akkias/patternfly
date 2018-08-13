@@ -1,0 +1,36 @@
+.modal {
+    position: relative;
+    &-content {
+        border: none;
+        box-shadow: $pf-global--BoxShadow--lg;
+    }
+    &-header {
+        background: none;
+        padding: $pf-global--spacer--xl $pf-global--spacer--xl $pf-global--spacer--sm;
+        .close {
+            opacity: 1;
+            font-size: $pf-global--FontSize--md;
+            margin-top: 0;
+            padding: $pf-global--spacer--sm;
+            position: absolute;
+            right: $pf-global--spacer--md;
+            top: $pf-global--spacer--sm;
+        }
+    }
+    &-title {
+        font-size: $pf-global--FontSize--2xl;
+        line-height: 1;
+    }
+    &-body {
+        font-size: $pf-global--FontSize--sm;
+        line-height: $pf-global--LineHeight--md;
+        padding: $pf-global--spacer--md $pf-global--spacer--xl;
+    }
+    &-footer {
+        padding: $pf-global--spacer--sm $pf-global--spacer--xl $pf-global--spacer--xl;
+        .btn {
+            font-size: $pf-global--FontSize--sm;
+            min-width: 100px;
+        }
+    }
+}

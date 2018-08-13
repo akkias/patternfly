@@ -68,26 +68,26 @@
     }
   }
   &-danger {
-    background: $pf-color-red-300;
+    background: $pf-color-red-100;
     &:hover,
     &:focus,
     &:active,
     &.active {
       outline: none;
-      background: $pf-color-red-400;
+      background: $pf-color-red-200;
     }
     &-secondary {
       background: $pf-color-white;
-      box-shadow: 0 0 0 1px $pf-color-red-400 inset;
-      color: $pf-color-red-400;
+      box-shadow: 0 0 0 1px $pf-color-red-100 inset;
+      color: $pf-color-red-100;
       &:hover,
       &:focus,
       &:active,
       &.active {
         background: $pf-color-white;
-        box-shadow: 0 0 0 2px $pf-color-red-400 inset;
+        box-shadow: 0 0 0 2px $pf-color-red-200 inset;
         outline: none;
-        color: $pf-color-red-400;
+        color: $pf-color-red-200;
       }
     }
   }

@@ -9,6 +9,7 @@ import Sidebar from '../components/sidebar'
 import '../../node_modules/patternfly/dist/css/patternfly.css'
 import '../../node_modules/patternfly/dist/css/patternfly-additions.css'
 import '../scss/style.scss'
+import favicon from '../../public/assets/images/fav.png'
 
 library.add(faTasks,faBell,faTimesCircle,faChevronDown, faSync, faPencilAlt,faTimes, faExclamationTriangle)
 const Layout = ({ children, data }) => (
@@ -18,6 +19,9 @@ const Layout = ({ children, data }) => (
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
+      ]}
+      link={[
+        { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
       ]}
     />
     <Header siteTitle={data.site.siteMetadata.title} />

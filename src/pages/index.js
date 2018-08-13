@@ -28,6 +28,10 @@ const Input = (props) => {
   );
 };
 
+const style =  {
+  display: 'block'
+}
+
 const IndexPage = () => (
   <div className="container m-t-8">
     <div className="row">
@@ -393,6 +397,31 @@ const IndexPage = () => (
 		<div className="row">
       <div className="col-md-6">asd</div>
 		</div>
+    <div className="row">
+      <div className="col-md-8">
+      <div className="modal-backdrop fade in hidden"></div> 
+      <div style={style} className="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-header">
+              <button type="button" className="close" data-dismiss="modal" aria-hidden="true" aria-label="Close">
+                <FontAwesomeIcon icon="times" />
+              </button>
+              <h4 className="modal-title" id="myModalLabel">Modal Title</h4>
+            </div>
+            <div className="modal-body">
+              <p>general_modal_final_finalfinal_v9_actualfinal.sketch</p>
+              <p>A file with this name already exists, would you like to overwrite the existing file or save a new copy?</p>
+            </div>
+            <div className="modal-footer">
+              <button type="button" className="btn btn-default btn-rounded" data-dismiss="modal">Cancel</button>
+              <button type="button" className="btn btn-primary btn-rounded m-l-4">Save</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
   </div>
 )
 
