@@ -1,0 +1,51 @@
+.shadow {
+    box-shadow: $pf-global--BoxShadow;
+    &-none {
+        box-shadow: none;
+    }
+    &--r {
+        box-shadow: $pf-global--BoxShadow-right;
+    }
+    &--b {
+        box-shadow: $pf-global--BoxShadow-bottom;
+    }
+    &--l {
+        box-shadow: $pf-global--BoxShadow-left;
+    }
+    &--t {
+        box-shadow: $pf-global--BoxShadow-top;
+    }
+    &-sm {
+        box-shadow: $pf-global--BoxShadow--sm;
+        &--r {
+            box-shadow: $pf-global--BoxShadow--sm-right;
+        }
+        &--b {
+            box-shadow: $pf-global--BoxShadow--sm-bottom;
+        }
+        &--l {
+            box-shadow: $pf-global--BoxShadow--sm-left;
+        }
+        &--t {
+            box-shadow: $pf-global--BoxShadow--sm-top;
+        }
+    }
+    &-lg {
+        box-shadow: $pf-global--BoxShadow--lg;
+        &--r {
+            box-shadow: $pf-global--BoxShadow--lg-right;
+        }
+        &--b {
+            box-shadow: $pf-global--BoxShadow--lg-bottom;
+        }
+        &--l {
+            box-shadow: $pf-global--BoxShadow--lg-left;
+        }
+        &--t {
+            box-shadow: $pf-global--BoxShadow--lg-top;
+        }
+    }
+    &-inner {
+        box-shadow: $pf-global--BoxShadow--inset;
+    }
+}

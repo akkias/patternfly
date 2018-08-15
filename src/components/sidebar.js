@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '../../node_modules/@fortawesome/react-fontaweso
 const Sidebar = () => (
   <div className="nav-pf-vertical nav-pf-vertical-light">
     <ul className="list-group">
-        <li className="list-group-item active">
+        <li className="list-group-item">
             <a href="#0">
                 <span className="list-group-item-value">Dashboard</span>
             </a>

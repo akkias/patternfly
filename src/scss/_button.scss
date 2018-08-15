@@ -124,7 +124,7 @@
   .caret {
     margin-left: $pf-global--spacer--sm;
   }
-  .btn-group > & {
+  &-group > & {
     @extend .btn-tertiary;
     &:first-child {
       border-radius: $pf-global--BorderRadius--sm 0 0 $pf-global--BorderRadius--sm;
@@ -132,12 +132,18 @@
     &:last-child {
       border-radius: 0 $pf-global--BorderRadius--sm $pf-global--BorderRadius--sm 0;
     }
+    &:hover,
     &.active {
-      background: $pf-color-black-200;
-      box-shadow: 0 0 0 1px $pf-color-black-300 inset;
+      background: $pf-color-white;
+      color: $pf-color-blue-400;
+    }
+    &.active {
+      box-shadow: 0 0 0 1px $pf-color-blue-400 inset;
+      position: relative;
+      z-index: 3;
     }
   }
-  .btn-group-sm > & {
+  &-group-sm > & {
     @extend .btn-sm;
   }
 }

@@ -1,0 +1,60 @@
+.alert {
+    background: $pf-color-white;
+    border: none;
+    box-shadow: $pf-global--BoxShadow--lg;
+    display: flex;
+    padding: 0;
+    &--icon {
+        font-size: $pf-global--FontSize--xl;
+        padding: $pf-global--spacer--md;
+    }
+    &--body {
+        flex: 1;
+        font-size: $pf-global--FontSize--sm;
+        padding: $pf-global--spacer--md;
+    }
+    &--title {
+       line-height: $pf-global--LineHeight--lg; 
+       @extend .font-semi-bold;
+    }
+    + .alert {
+        margin-top: 40px;
+    }
+    &.alert-danger {
+        .alert--icon {
+            background: $pf-global--danger-color--100;
+            color: $pf-global--danger-color--300;
+        }
+        .alert--title {
+            color: $pf-global--danger-color--200;
+        }
+    }
+    &.alert-info {
+        .alert--icon {
+            background: $pf-color-blue-300;
+            color: $pf-color-blue-600;
+        }
+        .alert--title {
+            color: $pf-color-blue-600;
+        }
+    }
+    &.alert-success {
+        .alert--icon {
+            background: $pf-color-light-green-400;
+            color: $pf-color-light-green-600;
+        }
+        .alert--title {
+            color: $pf-color-light-green-600;
+        }
+    }
+    &.alert-warning {
+        .alert--icon {
+            background: $pf-color-gold-400;
+            color: $pf-color-gold-600;
+        }
+        .alert--title {
+            color: $pf-color-gold-600;
+        }
+    }
+    
+}

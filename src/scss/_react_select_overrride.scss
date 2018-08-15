@@ -32,18 +32,17 @@
 }
 .react-select__menu {
   background: $pf-color-black-100 !important;
-  border-radius: $pf-global--BorderRadius--sm;
+  border-radius: 0 !important;
   box-shadow: $pf-global--BoxShadow !important;
-  margin-top: 1px !important;
-  padding: $pf-global--spacer--sm;
+  margin-top: $pf-global--spacer--xs !important;
+  padding: $pf-global--spacer--sm 0;
   .react-select__menu-list {
       padding: 0 !important;
   }
   .react-select__option {
-      border-radius: $pf-global--BorderRadius--sm;
-      font-weight: $pf-global--FontWeight--semi-bold;
-      line-height: $pf-global--LineHeight--sm;
-      padding: $pf-global--spacer--sm;
+      cursor: pointer;
+      font-size: $pf-global--FontSize--sm;
+      padding: $pf-global--spacer--sm $pf-global--spacer--md;
       &--is-focused,
       &--is-selected,
       &:active {

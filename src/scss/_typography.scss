@@ -1,3 +1,11 @@
+.font {
+    &-sans {
+        font-family: $pf-global--FontFamily--sans-serif;
+    }
+    &-mono {
+        font-family: $pf-global--FontFamily--monospace;
+    }
+}
 h1 {
     font-size: $pf-global--FontSize--3xl;
     font-weight: $pf-global--FontWeight--light;
@@ -9,4 +17,64 @@ h2 {
 h3 {
     font-size: $pf-global--FontSize--sm;
     font-weight: $pf-global--FontWeight--semi-bold;
+}
+.font {
+    &-light {
+        font-weight: $pf-global--FontWeight--light;
+    }
+    &-normal {
+        font-weight: $pf-global--FontWeight--normal;
+    }
+    &-semi-bold {
+        font-weight: $pf-global--FontWeight--semi-bold;
+    }
+    &-bold {
+        font-weight: $pf-global--FontWeight--bold;
+    }
+}
+.tracking {
+    &-tight	{
+        letter-spacing: -0.05em;
+    }
+    &-normal {
+        letter-spacing: 0;
+    }
+    &-wide {
+        letter-spacing: 0.05em;
+    }
+}
+.leading {
+    &-tight {
+        line-height: $pf-global--LineHeight--sm;
+    }
+    &-normal {
+        line-height: $pf-global--LineHeight--md;
+    }
+    &-loose {
+        line-height: $pf-global--LineHeight--lg;
+    }
+}
+.italic {
+    font-style: italic;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.lowercase {
+    text-transform: lowercase;
+}
+.capitalize {
+    text-transform: capitalize;
+}
+.normal-case {
+    text-transform: none;
+}
+.underline {
+    text-decoration: underline;
+}
+.line-through {
+    text-decoration: line-through;
+}
+.no-underline {
+    text-decoration: none;
 }

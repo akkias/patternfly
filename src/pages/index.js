@@ -34,6 +34,52 @@ const style =  {
 
 const IndexPage = () => (
   <div className="container m-t-8">
+  <div className="row">
+    <div className="col-md-6">
+      <div className="alert alert-success" role="alert">
+        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
+        <div className="alert--body">
+          <h4 className="alert--title">A simple primary alert—check it out!</h4>
+          <p>This is a description of the notification content.</p>
+        </div>
+      </div>
+      <div className="alert alert-danger" role="alert">
+        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
+        <div className="alert--body">
+          <h4 className="alert--title">A simple primary alert—check it out!</h4>
+          <p>This is a description of the notification content.</p>
+        </div>
+      </div>
+      <div className="alert alert-warning" role="alert">
+        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
+        <div className="alert--body">
+          <h4 className="alert--title">A simple primary alert—check it out!</h4>
+          <p>This is a description of the notification content.</p>
+        </div>
+      </div>
+      <div className="alert alert-info" role="alert">
+        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
+        <div className="alert--body">
+          <h4 className="alert--title">A simple primary alert—check it out!</h4>
+          <p>This is a description of the notification content.</p>
+        </div>
+      </div>
+      <div className="alert alert-light" role="alert">
+        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
+        <div className="alert--body">
+          <h4 className="alert--title">A simple primary alert—check it out!</h4>
+          <p>This is a description of the notification content.</p>
+        </div>
+      </div>
+      <div className="alert alert-dark" role="alert">
+        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
+        <div className="alert--body">
+          <h4 className="alert--title">A simple primary alert—check it out!</h4>
+          <p>This is a description of the notification content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
     <div className="row">
       <div className="col-md-6">
         <button className="btn btn-primary m-r-2">Label</button>
@@ -200,6 +246,9 @@ const IndexPage = () => (
           <button type="button" className="btn btn-secondary">Right</button>
         </div>
       </div>
+      <div className="col-md-2">
+        <Select className="m-b-4 react-select-container" classNamePrefix="react-select" isMulti={true} options={options} components={{ Input }} />
+      </div>
       <div className="col-md-6">
         <div className="dropdown open" role="group" aria-label="...">
             <button type="button" className="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -328,7 +377,7 @@ const IndexPage = () => (
               </tbody>
             </table>
           </div>
-          <div className="card-pf-footer text-center"><a href="#">footer action</a></div>
+          <div className="card-pf-footer text-center"><a className="font-semi-bold" href="#">footer action</a></div>
         </div>
       </div>
     </div>
@@ -394,9 +443,6 @@ const IndexPage = () => (
       </div>
     </div>
     <hr className="m-y-8" />
-		<div className="row">
-      <div className="col-md-6">asd</div>
-		</div>
     <div className="row">
       <div className="col-md-8">
       <div className="modal-backdrop fade in hidden"></div> 

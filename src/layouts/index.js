@@ -11,7 +11,7 @@ import '../../node_modules/patternfly/dist/css/patternfly-additions.css'
 import '../scss/style.scss'
 import favicon from '../../static/assets/images/fav.png'
 
-library.add(faTasks,faBell,faTimesCircle,faChevronDown, faSync, faPencilAlt,faTimes, faExclamationTriangle)
+library.add(faTasks,faBell,faTimesCircle,faChevronDown, faSync, faPencilAlt,faTimes, faExclamationTriangle, faCheckCircle)
 const Layout = ({ children, data }) => (
   <div>
     <Helmet
