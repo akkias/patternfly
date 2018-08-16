@@ -3,18 +3,18 @@
   border-radius: $pf-global--BorderRadius--sm;
   color: $pf-color-black-1000;
   font-size: 11px;
+  line-height: $pf-global--LineHeight--md;
   margin-left: $pf-global--spacer--xs;
-  padding: $pf-global--spacer--xs $pf-global--spacer--sm * 1.25;
+  padding: 1px $pf-global--spacer--sm;
 }
 .tag {
-  @extend.badge;
+  @extend .badge;
   border-radius: $pf-global--BorderRadius--lg;
   display: inline-block;
   font-weight: $pf-global--FontWeight--bold;
-  line-height: $pf-global--LineHeight--sm;
   margin-left: $pf-global--spacer--xs;
-      &-has-close-icon {
-    padding: $pf-global--spacer--xs $pf-global--spacer--xs $pf-global--spacer--xs $pf-global--spacer--sm;
+  &-has-close-icon {
+    padding-right: $pf-global--spacer--xs;
   }
   &-primary {
     background: $pf-color-blue-400;

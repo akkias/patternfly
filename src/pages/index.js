@@ -57,21 +57,7 @@ const IndexPage = () => (
           <p>This is a description of the notification content.</p>
         </div>
       </div>
-      <div className="alert alert-info" role="alert">
-        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
-        <div className="alert--body">
-          <h4 className="alert--title">A simple primary alert—check it out!</h4>
-          <p>This is a description of the notification content.</p>
-        </div>
-      </div>
-      <div className="alert alert-light" role="alert">
-        <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
-        <div className="alert--body">
-          <h4 className="alert--title">A simple primary alert—check it out!</h4>
-          <p>This is a description of the notification content.</p>
-        </div>
-      </div>
-      <div className="alert alert-dark" role="alert">
+      <div className="alert alert-info m-b-6" role="alert">
         <div className="alert--icon"><FontAwesomeIcon icon="check-circle" /></div>
         <div className="alert--body">
           <h4 className="alert--title">A simple primary alert—check it out!</h4>

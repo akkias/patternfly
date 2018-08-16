@@ -18,6 +18,9 @@
       }
     }
   }
+  &.react-select__control-sm {
+    min-height: 26px !important;
+  }
 }
 .react-select__indicator-separator {
   background-color: $pf-color-black-400 !important;

@@ -18,6 +18,26 @@ h3 {
     font-size: $pf-global--FontSize--sm;
     font-weight: $pf-global--FontWeight--semi-bold;
 }
+.pf-title {
+    &.pf-m-4xl {
+      font-size: $pf-global--FontSize--4xl;
+    }
+    &.pf-m-3xl {
+      font-size: $pf-global--FontSize--3xl;
+    }
+    &.pf-m-2xl {
+      font-size: $pf-global--FontSize--2xl;
+    }
+    &.pf-m-xl {
+      font-size: $pf-global--FontSize--xl;
+    }
+    &.pf-m-lg {
+      font-size: $pf-global--FontSize--lg;
+    }
+    &.pf-m-md {
+      font-size: $pf-global--FontSize--md;
+    }
+}
 .font {
     &-light {
         font-weight: $pf-global--FontWeight--light;

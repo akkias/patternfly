@@ -12,3 +12,38 @@
     }
   }
 }
+
+//List view
+.list-view-pf {
+  border: 0;
+  border-radius: 0;
+  padding: 0;  
+  .list-group-item {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .06);
+    padding: 0 $pf-global--spacer--lg;
+    &.list-view-pf-expand-active {
+      background: $pf-color-white;
+      border-color: $pf-color-black-200;
+      border-width: $pf-global--BorderWidth--sm $pf-global--BorderWidth--sm $pf-global--BorderWidth--sm 0;
+      box-shadow: 0 2px 2px rgba(0, 0, 0, .06), 0 6px 12px rgba(0, 0, 0, .12), 4px 0 0 0 $pf-global--active-color--100 inset;
+    }
+  }
+  .list-group-item-heading {
+    font-size: $pf-global--FontSize--sm;
+  }
+  .list-view-pf-actions {
+    align-items: center;
+    display: flex;
+    .dropdown-kebab-pf {
+      background: none;
+      margin-left: $pf-global--spacer--md;
+    }
+  }
+  .list-group-item-container {
+    background: transparent;
+    border-top: none;
+    margin-left: -$pf-global--spacer--lg;
+    margin-right: -$pf-global--spacer--lg;
+    padding: $pf-global--spacer--md $pf-global--spacer--lg $pf-global--spacer--lg; 
+  }
+}
